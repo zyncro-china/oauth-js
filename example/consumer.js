@@ -1,5 +1,16 @@
 var consumer = {};
 
+consumer.zyncro =
+{ consumerKey   : "your key"
+, consumerSecret: "your secret"
+, serviceProvider:
+  { signatureMethod     : "HMAC-SHA1"
+  , requestTokenURL     : "https://my.sandbox.zyncro.com/tokenservice/oauth/v1/get_request_token"
+  , userAuthorizationURL: "https://my.sandbox.zyncro.com/tokenservice/jsps/login/login.jsp"
+  , accessTokenURL      : "https://my.sandbox.zyncro.com/tokenservice/oauth/v1/get_access_token"
+  , echoURL             : "https://my.sandbox.zyncro.com/api/v1/rest/wall"
+  }
+};
 consumer.example =
 { consumerKey   : "myKey"
 , consumerSecret: "mySecret"
